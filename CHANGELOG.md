@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0 (build 5)
+- Fix: the app reported version 1.0 (1). Cause: moving to an explicit Info.plist for the file
+  type declaration wrote fixed version numbers; they now follow the project's version settings.
+
 ## 0.2.0 (build 4)
 - Export a saved profile to a `.nskprofile` file and import it on another Mac, with adapter
   choice, a same-network address check, an in-use check and a suggested free address.
