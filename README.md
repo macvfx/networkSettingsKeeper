@@ -18,6 +18,16 @@ new service (for example "Thunderbolt Ethernet Slot 1") when an adapter moves to
 and that new service starts on DHCP. The app finds the adapter by hardware address and restores
 the settings onto whichever service it now has.
 
+## Moving settings to another Mac
+
+Export a saved profile to a `.nskprofile` file (JSON) and import it on another Mac, for example
+to give a laptop the same adapter settings as an iMac. The export has no hardware address by
+default, so it works as a template for a similar adapter. On import you pick the adapter, and
+can change the IP address: only addresses in the original network are accepted, and the app can
+check whether something already answers at the address or suggest a free one. Nothing is applied
+until you choose Save and Apply. See the [user guide](Docs/USER_GUIDE.md) and
+[Docs/Example.nskprofile](Docs/Example.nskprofile).
+
 ## What is saved and restored
 
 IPv4 method, address, subnet mask and router; DNS servers and search domains; MTU and
@@ -49,6 +59,7 @@ Makes no network requests and collects nothing. Saved profiles are stored on you
 - Restore needs an administrator approval each time. Silent automatic restore would need a
   privileged helper and is not built yet.
 - IPv6 settings are not saved.
+- The "in use" check is a ping, so a device that does not answer ping looks free.
 - Only Ethernet-type services (including Thunderbolt and USB adapters) are handled.
 
 ## License

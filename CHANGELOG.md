@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.0 (build 4)
+- Export a saved profile to a `.nskprofile` file and import it on another Mac, with adapter
+  choice, a same-network address check, an in-use check and a suggested free address.
+- Double-clicking a `.nskprofile` file opens it for import.
+- Unit tests for the address checks and the file format.
+
 ## 0.1.0 (build 3)
 - Help and the main window link to code.matx.ca.
 

@@ -1,6 +1,7 @@
 import AppKit
 import Observation
 import ServiceManagement
+import UniformTypeIdentifiers
 import UserNotifications
 import os
 
@@ -12,6 +13,10 @@ enum SettingKey {
 @MainActor
 @Observable
 final class KeeperModel: NSObject, UNUserNotificationCenterDelegate {
+    static let shared = KeeperModel()
+
+    /// A profile file being reviewed before it is saved for an adapter on this Mac.
+    var importDraft: ImportDraft?
     private(set) var services: [ServiceInfo] = []
     private(set) var profiles: [Profile] = []
     private(set) var statuses: [UUID: ProfileStatus] = [:]
@@ -130,6 +135,76 @@ final class KeeperModel: NSObject, UNUserNotificationCenterDelegate {
         statuses[profile.id] = nil
         store.save(profiles)
         record("Removed \"\(profile.label)\"")
+    }
+
+    // MARK: Export and import
+
+    func export(_ profile: Profile, includeHardwareAddress: Bool) {
+        let panel = NSSavePanel()
+        panel.allowedContentTypes = [PortableProfile.contentType]
+        panel.nameFieldStringValue = "\(profile.label).\(PortableProfile.fileExtension)"
+        panel.message = includeHardwareAddress
+            ? "This file includes the adapter's hardware address."
+            : "This file can be imported on another Mac. It has no hardware address."
+        NSApp.activate(ignoringOtherApps: true)
+        guard panel.runModal() == .OK, let url = panel.url else { return }
+        let portable = PortableProfile(label: profile.label,
+                                       sourceHardwareAddress: includeHardwareAddress ? profile.mac : nil,
+                                       settings: profile.settings)
+        do {
+            try portable.encoded().write(to: url, options: .atomic)
+            record("Exported \"\(profile.label)\" to \(url.lastPathComponent)")
+        } catch {
+            record("Export failed: \(error.localizedDescription)")
+            showError("Could not save the profile.", error)
+        }
+    }
+
+    func chooseImport() {
+        let panel = NSOpenPanel()
+        panel.allowedContentTypes = [PortableProfile.contentType, .json]
+        panel.allowsMultipleSelection = false
+        panel.canChooseDirectories = false
+        panel.message = "Choose a Network Settings Keeper profile."
+        NSApp.activate(ignoringOtherApps: true)
+        if panel.runModal() == .OK, let url = panel.url { beginImport(url: url) }
+    }
+
+    func beginImport(url: URL) {
+        do {
+            let portable = try PortableProfile.decode(try Data(contentsOf: url))
+            refresh()
+            importDraft = ImportDraft(portable: portable, defaultTarget: savableServices.first)
+            record("Opened profile \"\(portable.label)\" for import")
+            NotificationCenter.default.post(name: .showMainWindow, object: nil)
+        } catch {
+            record("Import of \(url.lastPathComponent) failed: \(error.localizedDescription)")
+            showError("Could not import \(url.lastPathComponent).", error)
+        }
+    }
+
+    /// Save the reviewed profile for the chosen adapter, and optionally apply it right away.
+    func saveImported(_ draft: ImportDraft, apply: Bool) {
+        guard let target = services.first(where: { $0.id == draft.targetID }), let mac = target.mac else { return }
+        let name = draft.label.trimmingCharacters(in: .whitespaces)
+        let profile = Profile(label: name.isEmpty ? target.name : name, mac: mac,
+                              savedServiceName: target.name, settings: draft.settings(for: target))
+        profiles.removeAll { $0.mac == mac }
+        profiles.append(profile)
+        store.save(profiles)
+        record("Imported \"\(profile.label)\" for \(target.name)")
+        importDraft = nil
+        refresh()
+        if apply, let saved = profiles.first(where: { $0.id == profile.id }) { restore(saved) }
+    }
+
+    private func showError(_ message: String, _ error: Error) {
+        let alert = NSAlert()
+        alert.messageText = message
+        alert.informativeText = error.localizedDescription
+        alert.alertStyle = .warning
+        NSApp.activate(ignoringOtherApps: true)
+        alert.runModal()
     }
 
     // MARK: Restore

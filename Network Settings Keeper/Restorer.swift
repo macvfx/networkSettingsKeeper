@@ -86,18 +86,13 @@ enum Restorer {
     private static func validate(_ settings: ServiceSettings) throws {
         let ipv4 = settings.ipv4
         let addresses = ipv4.addresses + ipv4.subnetMasks + (ipv4.router.map { [$0] } ?? []) + settings.dns.servers
-        for value in addresses where !isIPAddress(value) {
+        for value in addresses where !IPv4.isIPAddress(value) {
             throw RestoreError.invalidProfile("\"\(value)\" is not an IP address")
         }
         if ipv4.method == kSCValNetIPv4ConfigMethodManual as String,
            ipv4.addresses.isEmpty || ipv4.addresses.count != ipv4.subnetMasks.count {
             throw RestoreError.invalidProfile("manual configuration needs an address and subnet mask")
         }
-    }
-
-    private static func isIPAddress(_ text: String) -> Bool {
-        var v4 = in_addr(), v6 = in6_addr()
-        return inet_pton(AF_INET, text, &v4) == 1 || inet_pton(AF_INET6, text, &v6) == 1
     }
 
     private static func authorization() throws -> AuthorizationRef {

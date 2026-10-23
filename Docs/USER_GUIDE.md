@@ -21,6 +21,31 @@ If you changed the settings on purpose, choose "Keep Current as New Saved" inste
 Shows each saved adapter, whether it is connected, whether its settings match, and exactly
 which values differ. Remove forgets a saved entry.
 
+## Exporting a profile
+
+In Saved Settings, choose Export on a saved entry:
+
+- **Export for Another Mac:** no hardware address. Use this to set up a different adapter.
+- **Export with Hardware Address:** also records the adapter's address, so importing it on the
+  same physical adapter keeps its speed and duplex setting.
+
+The file holds IP addresses, so treat it as semi-private.
+
+## Importing a profile
+
+Choose Import Profile in Saved Settings or the menu, or double-click a `.nskprofile` file.
+
+1. Pick the connected adapter to set up.
+2. Review the settings. For a manual address you can change the IP. Only addresses in the same
+   network are accepted, and not the network, broadcast or router address.
+3. "Check if in Use" pings the address, and "Suggest a Free Address" tries the next ones. A
+   device that does not answer ping looks free, so treat this as a hint.
+4. Save stores it as the saved settings for that adapter on this Mac. Save and Apply also writes
+   it to the adapter, with your administrator approval. From then on the app keeps watching it.
+
+Speed and duplex from the file are not imported onto a different adapter, because it may not
+support them. The file's MTU is.
+
 ## Settings
 
 - Check interval, 2 to 300 seconds.

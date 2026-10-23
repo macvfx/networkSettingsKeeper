@@ -1,0 +1,24 @@
+{
+  "exportedAt" : "2026-10-23T12:00:00Z",
+  "format" : "network-settings-keeper-profile",
+  "label" : "Example 10GbE adapter",
+  "settings" : {
+    "dns" : {
+      "searchDomains" : [],
+      "servers" : []
+    },
+    "ipv4" : {
+      "addresses" : [
+        "192.0.2.10"
+      ],
+      "method" : "Manual",
+      "subnetMasks" : [
+        "255.255.255.0"
+      ]
+    },
+    "link" : {
+      "mediaOptions" : []
+    }
+  },
+  "version" : 1
+}

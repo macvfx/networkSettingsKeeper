@@ -7,31 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02255064CF0E13A42C73EEBC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24D3FF303C7B578D9722B3 /* Models.swift */; };
+		025DE47186DA75B2DF71A6FF /* PortableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4019DDF275AB2459F5C02CAD /* PortableProfile.swift */; };
+		0E2ACD25CACD1129A8AE6D61 /* AddressTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC51F9B7E46D6641EDA7F /* AddressTools.swift */; };
 		0EE20FAE5478B14D21624143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3051302523ADE1A1A5F933C2 /* Assets.xcassets */; };
+		2A00EA03AE5766ABF35A88D8 /* AddressToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C6F6A230DD520E9D5AB238 /* AddressToolsTests.swift */; };
+		2FC33FFEC6635E6D44A1D91D /* AddressTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3AEC51F9B7E46D6641EDA7F /* AddressTools.swift */; };
 		320B6637E5AD450EE6680A9F /* NetworkSettingsKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */; };
 		46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E313EA4FC23746FF145E /* Restorer.swift */; };
 		53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */; };
 		676BAF8815AA9739D2B265BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C29C5BD63AA95C4BECD777 /* MainView.swift */; };
 		6BC602B921F77B6730BC2BD0 /* SiteFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517E0F0C651CF40FBDF21D1 /* SiteFooter.swift */; };
+		6E2AE2E2D7E612A8BEB141D7 /* ImportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287B12C7A2F149829823EB29 /* ImportSheet.swift */; };
 		996127226C9CE16FF9CA0438 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24D3FF303C7B578D9722B3 /* Models.swift */; };
+		ADEE75E30C28FB4F5FF73AD0 /* ImportDraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7805785AF96C76BA150B8F8 /* ImportDraft.swift */; };
+		B1513BD942CD22D06C9B626C /* PortableProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4019DDF275AB2459F5C02CAD /* PortableProfile.swift */; };
 		B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6FC2E3322C810268F230 /* ProfileStore.swift */; };
 		BAA4CF27F479F14998D180EF /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4E668BBCCF936C1B91EFA /* HelpView.swift */; };
 		C11C19A77CAB33CF3096032F /* KeeperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68236149800DABEC17CF2930 /* KeeperModel.swift */; };
+		C9F315ED72C9C8367343E570 /* PortableProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B7E2002A0276D3630405E0 /* PortableProfileTests.swift */; };
+		F7DE75A6B45F748DDFCFF45F /* AddressProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C63DD9438FE0FC767A033 /* AddressProbe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10C6F6A230DD520E9D5AB238 /* AddressToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressToolsTests.swift; sourceTree = "<group>"; };
 		1517E0F0C651CF40FBDF21D1 /* SiteFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteFooter.swift; sourceTree = "<group>"; };
 		17B4E668BBCCF936C1B91EFA /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceReader.swift; sourceTree = "<group>"; };
+		287B12C7A2F149829823EB29 /* ImportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportSheet.swift; sourceTree = "<group>"; };
 		3051302523ADE1A1A5F933C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30B7E2002A0276D3630405E0 /* PortableProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortableProfileTests.swift; sourceTree = "<group>"; };
+		4019DDF275AB2459F5C02CAD /* PortableProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortableProfile.swift; sourceTree = "<group>"; };
 		68236149800DABEC17CF2930 /* KeeperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperModel.swift; sourceTree = "<group>"; };
+		749C63DD9438FE0FC767A033 /* AddressProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressProbe.swift; sourceTree = "<group>"; };
 		8C51FECB2586B4DE1B98E4DE /* NetworkSettingsKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkSettingsKeeper.entitlements; sourceTree = "<group>"; };
 		BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Settings Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettingsKeeperApp.swift; sourceTree = "<group>"; };
+		C8A6EFDCEF3E3117A389AA5F /* Network Settings KeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network Settings KeeperTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA24D3FF303C7B578D9722B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D3C29C5BD63AA95C4BECD777 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D882E313EA4FC23746FF145E /* Restorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restorer.swift; sourceTree = "<group>"; };
 		DEF58D34528A813862B3A3B8 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		F3AEC51F9B7E46D6641EDA7F /* AddressTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTools.swift; sourceTree = "<group>"; };
+		F7805785AF96C76BA150B8F8 /* ImportDraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportDraft.swift; sourceTree = "<group>"; };
 		FADE6FC2E3322C810268F230 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +59,7 @@
 			children = (
 				FD351F09D3744D8A4CC31104 /* Config */,
 				20C28F110BC3C55FD631B406 /* Network Settings Keeper */,
+				BCFF615CB8D92A071C66E4FF /* Tests */,
 				CE0A8085211CBF999D1C22C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,13 +67,18 @@
 		20C28F110BC3C55FD631B406 /* Network Settings Keeper */ = {
 			isa = PBXGroup;
 			children = (
+				749C63DD9438FE0FC767A033 /* AddressProbe.swift */,
+				F3AEC51F9B7E46D6641EDA7F /* AddressTools.swift */,
 				3051302523ADE1A1A5F933C2 /* Assets.xcassets */,
 				17B4E668BBCCF936C1B91EFA /* HelpView.swift */,
+				F7805785AF96C76BA150B8F8 /* ImportDraft.swift */,
+				287B12C7A2F149829823EB29 /* ImportSheet.swift */,
 				68236149800DABEC17CF2930 /* KeeperModel.swift */,
 				D3C29C5BD63AA95C4BECD777 /* MainView.swift */,
 				CA24D3FF303C7B578D9722B3 /* Models.swift */,
 				8C51FECB2586B4DE1B98E4DE /* NetworkSettingsKeeper.entitlements */,
 				C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */,
+				4019DDF275AB2459F5C02CAD /* PortableProfile.swift */,
 				FADE6FC2E3322C810268F230 /* ProfileStore.swift */,
 				D882E313EA4FC23746FF145E /* Restorer.swift */,
 				18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */,
@@ -63,10 +87,20 @@
 			path = "Network Settings Keeper";
 			sourceTree = "<group>";
 		};
+		BCFF615CB8D92A071C66E4FF /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				10C6F6A230DD520E9D5AB238 /* AddressToolsTests.swift */,
+				30B7E2002A0276D3630405E0 /* PortableProfileTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		CE0A8085211CBF999D1C22C2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */,
+				C8A6EFDCEF3E3117A389AA5F /* Network Settings KeeperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +134,23 @@
 			productReference = BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C8B2D71FA03C0A583D087481 /* Network Settings KeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FD8C68F5EB4F37942F793FE /* Build configuration list for PBXNativeTarget "Network Settings KeeperTests" */;
+			buildPhases = (
+				C4CDE3A4DA286039E80EB368 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Network Settings KeeperTests";
+			packageProductDependencies = (
+			);
+			productName = "Network Settings KeeperTests";
+			productReference = C8A6EFDCEF3E3117A389AA5F /* Network Settings KeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +161,9 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					4CED6D320C016AE502792290 = {
+						ProvisioningStyle = Automatic;
+					};
+					C8B2D71FA03C0A583D087481 = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,6 +183,7 @@
 			projectRoot = "";
 			targets = (
 				4CED6D320C016AE502792290 /* Network Settings Keeper */,
+				C8B2D71FA03C0A583D087481 /* Network Settings KeeperTests */,
 			);
 		};
 /* End PBXProject section */
@@ -149,15 +204,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DE75A6B45F748DDFCFF45F /* AddressProbe.swift in Sources */,
+				0E2ACD25CACD1129A8AE6D61 /* AddressTools.swift in Sources */,
 				BAA4CF27F479F14998D180EF /* HelpView.swift in Sources */,
+				ADEE75E30C28FB4F5FF73AD0 /* ImportDraft.swift in Sources */,
+				6E2AE2E2D7E612A8BEB141D7 /* ImportSheet.swift in Sources */,
 				C11C19A77CAB33CF3096032F /* KeeperModel.swift in Sources */,
 				676BAF8815AA9739D2B265BA /* MainView.swift in Sources */,
 				996127226C9CE16FF9CA0438 /* Models.swift in Sources */,
 				320B6637E5AD450EE6680A9F /* NetworkSettingsKeeperApp.swift in Sources */,
+				025DE47186DA75B2DF71A6FF /* PortableProfile.swift in Sources */,
 				B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */,
 				46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */,
 				53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */,
 				6BC602B921F77B6730BC2BD0 /* SiteFooter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4CDE3A4DA286039E80EB368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FC33FFEC6635E6D44A1D91D /* AddressTools.swift in Sources */,
+				2A00EA03AE5766ABF35A88D8 /* AddressToolsTests.swift in Sources */,
+				02255064CF0E13A42C73EEBC /* Models.swift in Sources */,
+				B1513BD942CD22D06C9B626C /* PortableProfile.swift in Sources */,
+				C9F315ED72C9C8367343E570 /* PortableProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +272,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -214,7 +286,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -231,10 +303,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Network Settings Keeper/NetworkSettingsKeeper.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				INFOPLIST_FILE = "Network Settings Keeper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -251,16 +320,29 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Network Settings Keeper/NetworkSettingsKeeper.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_LSUIElement = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				INFOPLIST_FILE = "Network Settings Keeper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.networksettingskeeper.app;
 				PRODUCT_NAME = "Network Settings Keeper";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A18C578B34445CAD8365191F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.networksettingskeeper.tests;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -301,7 +383,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -321,7 +403,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,9 +415,34 @@
 			};
 			name = Debug;
 		};
+		A6B86675893691426882C481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.networksettingskeeper.tests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2FD8C68F5EB4F37942F793FE /* Build configuration list for PBXNativeTarget "Network Settings KeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18C578B34445CAD8365191F /* Debug */,
+				A6B86675893691426882C481 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		9C487311D53217E2256AE05E /* Build configuration list for PBXNativeTarget "Network Settings Keeper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

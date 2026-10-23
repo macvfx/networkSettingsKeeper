@@ -15,6 +15,9 @@ struct MainView: View {
         }
         .padding()
         .frame(minWidth: 620, minHeight: 440)
+        .sheet(item: Binding(get: { model.importDraft }, set: { model.importDraft = $0 })) { draft in
+            ImportSheet(model: model, draft: draft)
+        }
     }
 }
 
@@ -22,13 +25,19 @@ private struct ProfilesTab: View {
     let model: KeeperModel
 
     var body: some View {
-        if model.profiles.isEmpty {
-            ContentUnavailableView("No saved settings",
-                                   systemImage: "cable.connector",
-                                   description: Text("Configure an adapter the way you want it, then save it from the Adapters tab."))
-        } else {
-            List(model.profiles) { profile in
-                ProfileRow(model: model, profile: profile)
+        VStack(spacing: 8) {
+            HStack {
+                Spacer()
+                Button("Import Profile…") { model.chooseImport() }
+            }
+            if model.profiles.isEmpty {
+                ContentUnavailableView("No saved settings",
+                                       systemImage: "cable.connector",
+                                       description: Text("Configure an adapter the way you want it, then save it from the Adapters tab, or import a profile file from another Mac."))
+            } else {
+                List(model.profiles) { profile in
+                    ProfileRow(model: model, profile: profile)
+                }
             }
         }
     }
@@ -70,6 +79,11 @@ private struct ProfileRow: View {
             }
             HStack {
                 Spacer()
+                Menu("Export") {
+                    Button("Export for Another Mac…") { model.export(profile, includeHardwareAddress: false) }
+                    Button("Export with Hardware Address…") { model.export(profile, includeHardwareAddress: true) }
+                }
+                .menuStyle(.borderlessButton).fixedSize()
                 Button("Remove", role: .destructive) { model.remove(profile) }
                     .buttonStyle(.link)
             }

@@ -1,8 +1,22 @@
 import SwiftUI
 
+extension Notification.Name {
+    static let showMainWindow = Notification.Name("NetworkSettingsKeeper.showMainWindow")
+}
+
+final class AppDelegate: NSObject, NSApplicationDelegate {
+    /// Double-clicking a profile file opens it for import.
+    func application(_ application: NSApplication, open urls: [URL]) {
+        guard let url = urls.first else { return }
+        Task { @MainActor in KeeperModel.shared.beginImport(url: url) }
+    }
+}
+
 @main
 struct NetworkSettingsKeeperApp: App {
-    @State private var model = KeeperModel()
+    @NSApplicationDelegateAdaptor(AppDelegate.self) private var delegate
+    @Environment(\.openWindow) private var openWindow
+    @State private var model = KeeperModel.shared
 
     init() {
         // Diagnostic: print what the app reads, then exit. No UI, no changes.
@@ -22,6 +36,16 @@ struct NetworkSettingsKeeperApp: App {
             MenuContent(model: model)
         } label: {
             Image(nsImage: MenuBarIcon.image(for: model.overall))
+                .onReceive(NotificationCenter.default.publisher(for: .showMainWindow)) { _ in
+                    openWindow(id: "main")
+                    WindowFront.bring(titleContaining: "Network Settings Keeper")
+                }
+                .onAppear {
+                    if model.importDraft != nil {
+                        openWindow(id: "main")
+                        WindowFront.bring(titleContaining: "Network Settings Keeper")
+                    }
+                }
         }
 
         Window("Network Settings Keeper", id: "main") {
@@ -60,6 +84,10 @@ struct MenuContent: View {
             ForEach(model.savableServices) { service in
                 Button("\(service.name) (\(service.settings.ipv4.method))") { model.save(service) }
             }
+        }
+        Button("Import Profile…") {
+            show("main", "Network Settings Keeper")
+            model.chooseImport()
         }
         Button("Open Window…") { show("main", "Network Settings Keeper") }
         Button("Help…") { show("help", "Help") }
