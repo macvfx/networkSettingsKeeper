@@ -50,3 +50,7 @@ Makes no network requests and collects nothing. Saved profiles are stored on you
   privileged helper and is not built yet.
 - IPv6 settings are not saved.
 - Only Ethernet-type services (including Thunderbolt and USB adapters) are handled.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
