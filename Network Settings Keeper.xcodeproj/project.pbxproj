@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EE20FAE5478B14D21624143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3051302523ADE1A1A5F933C2 /* Assets.xcassets */; };
+		320B6637E5AD450EE6680A9F /* NetworkSettingsKeeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */; };
+		46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E313EA4FC23746FF145E /* Restorer.swift */; };
+		53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */; };
+		676BAF8815AA9739D2B265BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C29C5BD63AA95C4BECD777 /* MainView.swift */; };
+		996127226C9CE16FF9CA0438 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24D3FF303C7B578D9722B3 /* Models.swift */; };
+		B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6FC2E3322C810268F230 /* ProfileStore.swift */; };
+		BAA4CF27F479F14998D180EF /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4E668BBCCF936C1B91EFA /* HelpView.swift */; };
+		C11C19A77CAB33CF3096032F /* KeeperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68236149800DABEC17CF2930 /* KeeperModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17B4E668BBCCF936C1B91EFA /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceReader.swift; sourceTree = "<group>"; };
+		3051302523ADE1A1A5F933C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		68236149800DABEC17CF2930 /* KeeperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperModel.swift; sourceTree = "<group>"; };
+		8C51FECB2586B4DE1B98E4DE /* NetworkSettingsKeeper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NetworkSettingsKeeper.entitlements; sourceTree = "<group>"; };
+		BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Network Settings Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettingsKeeperApp.swift; sourceTree = "<group>"; };
+		CA24D3FF303C7B578D9722B3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D3C29C5BD63AA95C4BECD777 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D882E313EA4FC23746FF145E /* Restorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restorer.swift; sourceTree = "<group>"; };
+		DEF58D34528A813862B3A3B8 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		FADE6FC2E3322C810268F230 /* ProfileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0396CA57FBBFF681FD6D3CBF = {
+			isa = PBXGroup;
+			children = (
+				FD351F09D3744D8A4CC31104 /* Config */,
+				20C28F110BC3C55FD631B406 /* Network Settings Keeper */,
+				CE0A8085211CBF999D1C22C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20C28F110BC3C55FD631B406 /* Network Settings Keeper */ = {
+			isa = PBXGroup;
+			children = (
+				3051302523ADE1A1A5F933C2 /* Assets.xcassets */,
+				17B4E668BBCCF936C1B91EFA /* HelpView.swift */,
+				68236149800DABEC17CF2930 /* KeeperModel.swift */,
+				D3C29C5BD63AA95C4BECD777 /* MainView.swift */,
+				CA24D3FF303C7B578D9722B3 /* Models.swift */,
+				8C51FECB2586B4DE1B98E4DE /* NetworkSettingsKeeper.entitlements */,
+				C788761A3772F8D8E99944C4 /* NetworkSettingsKeeperApp.swift */,
+				FADE6FC2E3322C810268F230 /* ProfileStore.swift */,
+				D882E313EA4FC23746FF145E /* Restorer.swift */,
+				18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */,
+			);
+			path = "Network Settings Keeper";
+			sourceTree = "<group>";
+		};
+		CE0A8085211CBF999D1C22C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD351F09D3744D8A4CC31104 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				DEF58D34528A813862B3A3B8 /* Signing.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CED6D320C016AE502792290 /* Network Settings Keeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C487311D53217E2256AE05E /* Build configuration list for PBXNativeTarget "Network Settings Keeper" */;
+			buildPhases = (
+				95B869699C42E20DAD1A1131 /* Sources */,
+				E5FEA5800295736E25EDA4BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Network Settings Keeper";
+			packageProductDependencies = (
+			);
+			productName = "Network Settings Keeper";
+			productReference = BAA1D5C43E62485CB24A5D5A /* Network Settings Keeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC4AA1B8BCE9948D5A6224E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4CED6D320C016AE502792290 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F68FA5156B8B208B5A3208A3 /* Build configuration list for PBXProject "Network Settings Keeper" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 0396CA57FBBFF681FD6D3CBF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CE0A8085211CBF999D1C22C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CED6D320C016AE502792290 /* Network Settings Keeper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5FEA5800295736E25EDA4BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EE20FAE5478B14D21624143 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95B869699C42E20DAD1A1131 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA4CF27F479F14998D180EF /* HelpView.swift in Sources */,
+				C11C19A77CAB33CF3096032F /* KeeperModel.swift in Sources */,
+				676BAF8815AA9739D2B265BA /* MainView.swift in Sources */,
+				996127226C9CE16FF9CA0438 /* Models.swift in Sources */,
+				320B6637E5AD450EE6680A9F /* NetworkSettingsKeeperApp.swift in Sources */,
+				B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */,
+				46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */,
+				53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E6769BD55DF38CD0C824870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF58D34528A813862B3A3B8 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		75754BA1551C19BFDE5ECB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Network Settings Keeper/NetworkSettingsKeeper.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.networksettingskeeper.app;
+				PRODUCT_NAME = "Network Settings Keeper";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8652EE4D6D98BE7933AAE7B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Network Settings Keeper/NetworkSettingsKeeper.entitlements";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.networksettingskeeper.app;
+				PRODUCT_NAME = "Network Settings Keeper";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A33AD5FBC4D31DB597B5CC5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF58D34528A813862B3A3B8 /* Signing.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C487311D53217E2256AE05E /* Build configuration list for PBXNativeTarget "Network Settings Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8652EE4D6D98BE7933AAE7B2 /* Debug */,
+				75754BA1551C19BFDE5ECB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F68FA5156B8B208B5A3208A3 /* Build configuration list for PBXProject "Network Settings Keeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A33AD5FBC4D31DB597B5CC5E /* Debug */,
+				0E6769BD55DF38CD0C824870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC4AA1B8BCE9948D5A6224E7 /* Project object */;
+}

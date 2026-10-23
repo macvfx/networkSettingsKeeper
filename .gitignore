@@ -1,0 +1,15 @@
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.dmg
+*.pkg
+*.xcarchive
+.build/
+.claude/
+
+# Local signing settings and credentials (never commit real identities)
+Config/Signing.local.xcconfig
+signing.env
+*.env
