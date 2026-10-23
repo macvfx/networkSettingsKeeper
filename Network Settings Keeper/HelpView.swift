@@ -6,6 +6,7 @@ struct HelpView: View {
             Text("Network Settings Keeper").font(.title2.bold())
             Text("Remembers how an Ethernet adapter is set up and puts the settings back if macOS loses them, "
                  + "for example after a Thunderbolt adapter is unplugged and plugged in again.")
+                .fixedSize(horizontal: false, vertical: true)
             item("1.circle", "Save", "Set the adapter up the way you want, then choose "
                  + "\"Save as Known-Good\" in the Adapters tab, or \"Save Current Settings Of\" in the menu.")
             item("eye", "Watch", "The app checks every few seconds. The icon is green when the saved settings "
