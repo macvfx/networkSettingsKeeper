@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.0 (build 3)
+- Help and the main window link to code.matx.ca.
+
 ## 0.1.0 (build 2)
 - Fix: the first line of the Help window was cut off. Cause: the intro text had no room to wrap
   in a fixed-width window; it now grows to fit.

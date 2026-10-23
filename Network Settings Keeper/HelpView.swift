@@ -19,6 +19,8 @@ struct HelpView: View {
                  + "plugged into a different port.")
             item("pencil", "Changed on purpose?", "Use \"Keep Current as New Saved\" so the app stops "
                  + "treating your new settings as a problem.")
+            Divider()
+            SiteFooter()
         }
         .padding(20)
         .frame(width: 460)

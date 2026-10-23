@@ -4,11 +4,14 @@ struct MainView: View {
     let model: KeeperModel
 
     var body: some View {
+        VStack(spacing: 8) {
         TabView {
             ProfilesTab(model: model).tabItem { Label("Saved Settings", systemImage: "checkmark.shield") }
             AdaptersTab(model: model).tabItem { Label("Adapters", systemImage: "cable.connector") }
             ActivityTab(model: model).tabItem { Label("Activity", systemImage: "list.bullet") }
             SettingsTab(model: model).tabItem { Label("Settings", systemImage: "gearshape") }
+        }
+        SiteFooter()
         }
         .padding()
         .frame(minWidth: 620, minHeight: 440)

@@ -12,6 +12,7 @@
 		46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D882E313EA4FC23746FF145E /* Restorer.swift */; };
 		53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */; };
 		676BAF8815AA9739D2B265BA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C29C5BD63AA95C4BECD777 /* MainView.swift */; };
+		6BC602B921F77B6730BC2BD0 /* SiteFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1517E0F0C651CF40FBDF21D1 /* SiteFooter.swift */; };
 		996127226C9CE16FF9CA0438 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA24D3FF303C7B578D9722B3 /* Models.swift */; };
 		B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADE6FC2E3322C810268F230 /* ProfileStore.swift */; };
 		BAA4CF27F479F14998D180EF /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B4E668BBCCF936C1B91EFA /* HelpView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1517E0F0C651CF40FBDF21D1 /* SiteFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteFooter.swift; sourceTree = "<group>"; };
 		17B4E668BBCCF936C1B91EFA /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceReader.swift; sourceTree = "<group>"; };
 		3051302523ADE1A1A5F933C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				FADE6FC2E3322C810268F230 /* ProfileStore.swift */,
 				D882E313EA4FC23746FF145E /* Restorer.swift */,
 				18A38A8B0EE9EC7C4A160612 /* ServiceReader.swift */,
+				1517E0F0C651CF40FBDF21D1 /* SiteFooter.swift */,
 			);
 			path = "Network Settings Keeper";
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 				B60D756F1F17830B2D24F034 /* ProfileStore.swift in Sources */,
 				46DCE9916FF402AFC15E1A16 /* Restorer.swift in Sources */,
 				53933EC9E5ACB61FE8949EF9 /* ServiceReader.swift in Sources */,
+				6BC602B921F77B6730BC2BD0 /* SiteFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +200,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -297,7 +301,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
